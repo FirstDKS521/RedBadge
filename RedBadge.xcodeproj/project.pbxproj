@@ -13,6 +13,13 @@
 		619896631D8E4A3B001CA1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619896611D8E4A3B001CA1D1 /* LaunchScreen.storyboard */; };
 		6198966E1D8E4A3B001CA1D1 /* RedBadgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6198966D1D8E4A3B001CA1D1 /* RedBadgeTests.m */; };
 		619896791D8E4A3B001CA1D1 /* RedBadgeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 619896781D8E4A3B001CA1D1 /* RedBadgeUITests.m */; };
+		619896881D8E4A87001CA1D1 /* RedTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 619896871D8E4A87001CA1D1 /* RedTabbarController.m */; };
+		6198968C1D8E4A97001CA1D1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6198968A1D8E4A97001CA1D1 /* FirstViewController.m */; };
+		6198968D1D8E4A97001CA1D1 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6198968B1D8E4A97001CA1D1 /* FirstViewController.xib */; };
+		619896911D8E4AA6001CA1D1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6198968F1D8E4AA6001CA1D1 /* SecondViewController.m */; };
+		619896921D8E4AA6001CA1D1 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 619896901D8E4AA6001CA1D1 /* SecondViewController.xib */; };
+		619896961D8E5776001CA1D1 /* UIView+DKSBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 619896951D8E5776001CA1D1 /* UIView+DKSBadge.m */; };
+		61B1C8391D8E5E58004EF48A /* UITabBar+DKSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B1C8381D8E5E58004EF48A /* UITabBar+DKSTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,18 @@
 		619896741D8E4A3B001CA1D1 /* RedBadgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedBadgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		619896781D8E4A3B001CA1D1 /* RedBadgeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedBadgeUITests.m; sourceTree = "<group>"; };
 		6198967A1D8E4A3B001CA1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		619896861D8E4A87001CA1D1 /* RedTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedTabbarController.h; sourceTree = "<group>"; };
+		619896871D8E4A87001CA1D1 /* RedTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedTabbarController.m; sourceTree = "<group>"; };
+		619896891D8E4A97001CA1D1 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		6198968A1D8E4A97001CA1D1 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		6198968B1D8E4A97001CA1D1 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		6198968E1D8E4AA6001CA1D1 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		6198968F1D8E4AA6001CA1D1 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		619896901D8E4AA6001CA1D1 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		619896941D8E5776001CA1D1 /* UIView+DKSBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DKSBadge.h"; sourceTree = "<group>"; };
+		619896951D8E5776001CA1D1 /* UIView+DKSBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DKSBadge.m"; sourceTree = "<group>"; };
+		61B1C8371D8E5E58004EF48A /* UITabBar+DKSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+DKSTabBar.h"; sourceTree = "<group>"; };
+		61B1C8381D8E5E58004EF48A /* UITabBar+DKSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+DKSTabBar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +115,17 @@
 		619896581D8E4A3B001CA1D1 /* RedBadge */ = {
 			isa = PBXGroup;
 			children = (
+				619896931D8E5752001CA1D1 /* DKSBadge */,
 				6198965C1D8E4A3B001CA1D1 /* AppDelegate.h */,
 				6198965D1D8E4A3B001CA1D1 /* AppDelegate.m */,
+				619896861D8E4A87001CA1D1 /* RedTabbarController.h */,
+				619896871D8E4A87001CA1D1 /* RedTabbarController.m */,
+				619896891D8E4A97001CA1D1 /* FirstViewController.h */,
+				6198968A1D8E4A97001CA1D1 /* FirstViewController.m */,
+				6198968B1D8E4A97001CA1D1 /* FirstViewController.xib */,
+				6198968E1D8E4AA6001CA1D1 /* SecondViewController.h */,
+				6198968F1D8E4AA6001CA1D1 /* SecondViewController.m */,
+				619896901D8E4AA6001CA1D1 /* SecondViewController.xib */,
 				6198965F1D8E4A3B001CA1D1 /* Assets.xcassets */,
 				619896611D8E4A3B001CA1D1 /* LaunchScreen.storyboard */,
 				619896641D8E4A3B001CA1D1 /* Info.plist */,
@@ -130,6 +158,17 @@
 				6198967A1D8E4A3B001CA1D1 /* Info.plist */,
 			);
 			path = RedBadgeUITests;
+			sourceTree = "<group>";
+		};
+		619896931D8E5752001CA1D1 /* DKSBadge */ = {
+			isa = PBXGroup;
+			children = (
+				619896941D8E5776001CA1D1 /* UIView+DKSBadge.h */,
+				619896951D8E5776001CA1D1 /* UIView+DKSBadge.m */,
+				61B1C8371D8E5E58004EF48A /* UITabBar+DKSTabBar.h */,
+				61B1C8381D8E5E58004EF48A /* UITabBar+DKSTabBar.m */,
+			);
+			path = DKSBadge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +274,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619896921D8E4AA6001CA1D1 /* SecondViewController.xib in Resources */,
 				619896601D8E4A3B001CA1D1 /* Assets.xcassets in Resources */,
+				6198968D1D8E4A97001CA1D1 /* FirstViewController.xib in Resources */,
 				619896631D8E4A3B001CA1D1 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,8 +302,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619896911D8E4AA6001CA1D1 /* SecondViewController.m in Sources */,
 				6198965E1D8E4A3B001CA1D1 /* AppDelegate.m in Sources */,
+				61B1C8391D8E5E58004EF48A /* UITabBar+DKSTabBar.m in Sources */,
+				619896881D8E4A87001CA1D1 /* RedTabbarController.m in Sources */,
+				619896961D8E5776001CA1D1 /* UIView+DKSBadge.m in Sources */,
 				6198965B1D8E4A3B001CA1D1 /* main.m in Sources */,
+				6198968C1D8E4A97001CA1D1 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +524,7 @@
 				6198967F1D8E4A3B001CA1D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		619896801D8E4A3B001CA1D1 /* Build configuration list for PBXNativeTarget "RedBadgeTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +533,7 @@
 				619896821D8E4A3B001CA1D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		619896831D8E4A3B001CA1D1 /* Build configuration list for PBXNativeTarget "RedBadgeUITests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +542,7 @@
 				619896851D8E4A3B001CA1D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

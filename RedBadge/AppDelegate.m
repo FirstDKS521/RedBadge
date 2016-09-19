@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RedTabbarController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    RedTabbarController *redVC = [[RedTabbarController alloc] init];
+    self.window.rootViewController = redVC;
+    
     return YES;
 }
 
