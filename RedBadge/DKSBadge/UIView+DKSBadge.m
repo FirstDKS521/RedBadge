@@ -9,18 +9,15 @@
 #import "UIView+DKSBadge.h"
 #import <objc/runtime.h>
 
-static NSString * const badgeLabelKey;
+static NSString * const badgeViewKey;
 static NSInteger const pointWidth = 6; //小红点的宽高
 static NSInteger const rightRange = 5; //距离控件右边的距离
 @implementation UIView (DKSBadge)
 
 - (void)showBadge
 {
-    self.badge = [[UILabel alloc] init];
+    self.badge = [[UIView alloc] init];
     self.badge.frame = CGRectMake(self.frame.size.width + rightRange, -pointWidth / 2, pointWidth, pointWidth);
-    self.badge.font = [UIFont systemFontOfSize:6];
-    self.badge.textColor = [UIColor whiteColor];
-    self.badge.textAlignment = NSTextAlignmentCenter;
     self.badge.backgroundColor = [UIColor redColor];
     //圆角为宽度的一半
     self.badge.layer.cornerRadius = pointWidth / 2;
@@ -38,15 +35,15 @@ static NSInteger const rightRange = 5; //距离控件右边的距离
 
 #pragma mark - GetterAndSetter
 
-- (UILabel *)badge
+- (UIView *)badge
 {
     //通过runtime创建一个UILabel的属性
-    return objc_getAssociatedObject(self, &badgeLabelKey);
+    return objc_getAssociatedObject(self, &badgeViewKey);
 }
 
-- (void)setBadge:(UILabel *)label
+- (void)setBadge:(UIView *)view
 {
-    objc_setAssociatedObject(self, &badgeLabelKey, label, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, &badgeViewKey, view, OBJC_ASSOCIATION_RETAIN);
 }
 
 @end

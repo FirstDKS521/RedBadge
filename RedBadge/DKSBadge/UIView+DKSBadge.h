@@ -14,7 +14,7 @@
  *  通过创建label，创建小红点；
  *  我是想以后如果小红点里面需要显示个数的时候，好扩展；
  */
-@property (nonatomic, strong) UILabel *badge;
+@property (nonatomic, strong) UIView *badge;
 
 /**
  *  显示小红点

@@ -3,7 +3,7 @@
 ![小红点](http://upload-images.jianshu.io/upload_images/1840399-5345ba5e4484d156.gif?imageMogr2/auto-orient/strip)
 
 ####给UIView添加小红点
-创建一个UIView的category，通过runtime创建一个label属性（之所以创建label属性，是想着以后如果需要显示数字时，可以扩展一下）；
+创建一个UIView的category，通过runtime创建一个UIView属性；
 
 .h中代码如下：
 
@@ -16,7 +16,7 @@
  *  通过创建label，创建小红点；
  *  我是想以后如果小红点里面需要显示个数的时候，好扩展；
  */
-@property (nonatomic, strong) UILabel *badge;
+@property (nonatomic, strong) UIView *badge;
 
 /**
  *  显示小红点
@@ -38,18 +38,15 @@
 #import "UIView+DKSBadge.h"
 #import <objc/runtime.h>
 
-static NSString * const badgeLabelKey;
+static NSString * const badgeViewKey;
 static NSInteger const pointWidth = 6; //小红点的宽高
 static NSInteger const rightRange = 5; //距离控件右边的距离
 @implementation UIView (DKSBadge)
 
 - (void)showBadge
 {
-    self.badge = [[UILabel alloc] init];
+    self.badge = [[UIView alloc] init];
     self.badge.frame = CGRectMake(self.frame.size.width + rightRange, -pointWidth / 2, pointWidth, pointWidth);
-    self.badge.font = [UIFont systemFontOfSize:6];
-    self.badge.textColor = [UIColor whiteColor];
-    self.badge.textAlignment = NSTextAlignmentCenter;
     self.badge.backgroundColor = [UIColor redColor];
     //圆角为宽度的一半
     self.badge.layer.cornerRadius = pointWidth / 2;
@@ -67,20 +64,20 @@ static NSInteger const rightRange = 5; //距离控件右边的距离
 
 #pragma mark - GetterAndSetter
 
-- (UILabel *)badge
+- (UIView *)badge
 {
-    //通过runtime创建一个UILabel的属性
-    return objc_getAssociatedObject(self, &badgeLabelKey);
+    //通过runtime创建一个UIView的属性
+    return objc_getAssociatedObject(self, &badgeViewKey);
 }
 
-- (void)setBadge:(UILabel *)label
+- (void)setBadge:(UIView *)view
 {
-    objc_setAssociatedObject(self, &badgeLabelKey, label, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, &badgeViewKey, view, OBJC_ASSOCIATION_RETAIN);
 }
 
 @end
 ```
-####如果需要在UITabBar上面添加小红点，也是同样的道理，需要创建UITabBar的category，此处就不在贴代码了
+####如果需要在UITabBar上面添加小红点，也是同样的道理，需要创建UITabBar的category，此处就不在贴代码了，UITabBar的代码和UIView的代码都在下面的demo中；
 
 如果有幸被你用到的话，需要将DKSBadge拖入到你的工程中；当然，你也可以自己封装一个！！！
 [Demo的GitHub地址](https://github.com/FirstDKS521/RedBadge.git)
