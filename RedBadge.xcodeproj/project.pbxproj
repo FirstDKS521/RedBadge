@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6183CA521D9B95B400D2F094 /* UITabBarItem+DKSBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 6183CA511D9B95B400D2F094 /* UITabBarItem+DKSBadge.m */; };
 		6198965B1D8E4A3B001CA1D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6198965A1D8E4A3B001CA1D1 /* main.m */; };
 		6198965E1D8E4A3B001CA1D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6198965D1D8E4A3B001CA1D1 /* AppDelegate.m */; };
 		619896601D8E4A3B001CA1D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6198965F1D8E4A3B001CA1D1 /* Assets.xcassets */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6183CA501D9B95B400D2F094 /* UITabBarItem+DKSBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+DKSBadge.h"; sourceTree = "<group>"; };
+		6183CA511D9B95B400D2F094 /* UITabBarItem+DKSBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+DKSBadge.m"; sourceTree = "<group>"; };
 		619896561D8E4A3B001CA1D1 /* RedBadge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBadge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6198965A1D8E4A3B001CA1D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6198965C1D8E4A3B001CA1D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				619896951D8E5776001CA1D1 /* UIView+DKSBadge.m */,
 				61B1C8371D8E5E58004EF48A /* UITabBar+DKSTabBar.h */,
 				61B1C8381D8E5E58004EF48A /* UITabBar+DKSTabBar.m */,
+				6183CA501D9B95B400D2F094 /* UITabBarItem+DKSBadge.h */,
+				6183CA511D9B95B400D2F094 /* UITabBarItem+DKSBadge.m */,
 			);
 			path = DKSBadge;
 			sourceTree = "<group>";
@@ -233,11 +238,12 @@
 		6198964E1D8E4A3B001CA1D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = DuKaiShun;
 				TargetAttributes = {
 					619896551D8E4A3B001CA1D1 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6X558W558T;
 					};
 					619896681D8E4A3B001CA1D1 = {
 						CreatedOnToolsVersion = 7.2;
@@ -304,6 +310,7 @@
 			files = (
 				619896911D8E4AA6001CA1D1 /* SecondViewController.m in Sources */,
 				6198965E1D8E4A3B001CA1D1 /* AppDelegate.m in Sources */,
+				6183CA521D9B95B400D2F094 /* UITabBarItem+DKSBadge.m in Sources */,
 				61B1C8391D8E5E58004EF48A /* UITabBar+DKSTabBar.m in Sources */,
 				619896881D8E4A87001CA1D1 /* RedTabbarController.m in Sources */,
 				619896961D8E5776001CA1D1 /* UIView+DKSBadge.m in Sources */,
@@ -368,11 +375,14 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Du KaiShun (PJE8ZUK9F8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Du KaiShun (PJE8ZUK9F8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -411,11 +421,14 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Du KaiShun (PJE8ZUK9F8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Du KaiShun (PJE8ZUK9F8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -439,7 +452,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6X558W558T;
 				INFOPLIST_FILE = RedBadge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robooot.RedBadge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,7 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6X558W558T;
 				INFOPLIST_FILE = RedBadge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robooot.RedBadge;
 				PRODUCT_NAME = "$(TARGET_NAME)";

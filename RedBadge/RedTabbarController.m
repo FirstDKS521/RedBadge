@@ -9,7 +9,7 @@
 #import "RedTabbarController.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
-#import "UITabBar+DKSTabBar.h"
+#import "UITabBarItem+DKSBadge.h"
 
 @interface RedTabbarController ()
 
@@ -32,8 +32,8 @@
     
     self.viewControllers = @[firstNav, secondNav];
     
-    [self.tabBar showBadgeIndex:0];
-    [self.tabBar showBadgeIndex:1];
+    [self.tabBar.items[0] showBadge];
+    [self.tabBar.items[1] showBadge];
 }
 
 @end

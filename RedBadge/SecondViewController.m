@@ -8,7 +8,7 @@
 
 #import "SecondViewController.h"
 #import "RedTabbarController.h"
-#import "UITabBar+DKSTabBar.h"
+#import "UITabBarItem+DKSBadge.h"
 
 @interface SecondViewController ()
 
@@ -25,7 +25,7 @@
     [super viewDidAppear:YES];
     
     RedTabbarController *redVC = (RedTabbarController *)self.view.window.rootViewController;
-    [redVC.tabBar hideBadgeIndex:0];
+    [redVC.tabBar.items[0] hidenBadge];
 }
 
 @end

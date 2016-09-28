@@ -45,15 +45,17 @@ static NSInteger const rightRange = 5; //距离控件右边的距离
 
 - (void)showBadge
 {
-    self.badge = [[UIView alloc] init];
-    self.badge.frame = CGRectMake(self.frame.size.width + rightRange, -pointWidth / 2, pointWidth, pointWidth);
-    self.badge.backgroundColor = [UIColor redColor];
-    //圆角为宽度的一半
-    self.badge.layer.cornerRadius = pointWidth / 2;
-    //确保可以有圆角
-    self.badge.layer.masksToBounds = YES;
-    [self addSubview:self.badge];
-    [self bringSubviewToFront:self.badge];
+    if (self.badge == nil) {
+        self.badge = [[UIView alloc] init];
+        self.badge.frame = CGRectMake(self.frame.size.width + rightRange, -pointWidth / 2, pointWidth, pointWidth);
+        self.badge.backgroundColor = [UIColor redColor];
+        //圆角为宽度的一半
+        self.badge.layer.cornerRadius = pointWidth / 2;
+        //确保可以有圆角
+        self.badge.layer.masksToBounds = YES;
+        [self addSubview:self.badge];
+        [self bringSubviewToFront:self.badge];
+    }
 }
 
 - (void)hidenBadge
@@ -77,7 +79,9 @@ static NSInteger const rightRange = 5; //距离控件右边的距离
 
 @end
 ```
-####如果需要在UITabBar上面添加小红点，也是同样的道理，需要创建UITabBar的category，此处就不在贴代码了，UITabBar的代码和UIView的代码都在下面的demo中；
+####如果需要在UITabBar上面添加小红点，也是同样的道理，需要创建UITabBarItem的category，此处就不在贴代码了，UITabBarItem的代码和UIView的代码都在下面的demo中；
+
+注释：本来我是创建的UITabBar的Category，但是更新过Xcode之后，这个Demo的小红点就出现了混乱的状况，但是我公司的项目是没有问题的（具体原因没有搞明白）；所以这才创建了UITabBarItem的延展，但是UITabBar的延展还留在了Demo中，仅供参考！
 
 如果有幸被你用到的话，需要将DKSBadge拖入到你的工程中；当然，你也可以自己封装一个！！！
 [Demo的GitHub地址](https://github.com/FirstDKS521/RedBadge.git)

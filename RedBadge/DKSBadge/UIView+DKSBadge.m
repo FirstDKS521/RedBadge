@@ -16,15 +16,17 @@ static NSInteger const rightRange = 5; //距离控件右边的距离
 
 - (void)showBadge
 {
-    self.badge = [[UIView alloc] init];
-    self.badge.frame = CGRectMake(self.frame.size.width + rightRange, -pointWidth / 2, pointWidth, pointWidth);
-    self.badge.backgroundColor = [UIColor redColor];
-    //圆角为宽度的一半
-    self.badge.layer.cornerRadius = pointWidth / 2;
-    //确保可以有圆角
-    self.badge.layer.masksToBounds = YES;
-    [self addSubview:self.badge];
-    [self bringSubviewToFront:self.badge];
+    if (self.badge == nil) {
+        self.badge = [[UIView alloc] init];
+        self.badge.frame = CGRectMake(self.frame.size.width + rightRange, -pointWidth / 2, pointWidth, pointWidth);
+        self.badge.backgroundColor = [UIColor redColor];
+        //圆角为宽度的一半
+        self.badge.layer.cornerRadius = pointWidth / 2;
+        //确保可以有圆角
+        self.badge.layer.masksToBounds = YES;
+        [self addSubview:self.badge];
+        [self bringSubviewToFront:self.badge];
+    }
 }
 
 - (void)hidenBadge
