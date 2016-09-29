@@ -13,8 +13,8 @@
 @interface UIView (DKSBadge)
 
 /**
- *  通过创建label，创建小红点；
- *  我是想以后如果小红点里面需要显示个数的时候，好扩展；
+ *  通过创建UIView，创建小红点；
+ *  也可以创建UILabel，如果小红点里面需要显示个数的时候，好扩展；
  */
 @property (nonatomic, strong) UIView *badge;
 
