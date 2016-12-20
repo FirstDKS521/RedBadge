@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.label showBadge];
+    [self.label showBadgeWithCount:83];
     [self.button showBadge];
     [self.aView showBadge];
 }

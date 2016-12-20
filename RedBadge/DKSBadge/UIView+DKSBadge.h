@@ -11,15 +11,20 @@
 @interface UIView (DKSBadge)
 
 /**
- *  通过创建label，创建小红点；
- *  我是想以后如果小红点里面需要显示个数的时候，好扩展；
+ *  通过创建label，显示小红点；
  */
-@property (nonatomic, strong) UIView *badge;
+@property (nonatomic, strong) UILabel *badge;
 
 /**
  *  显示小红点
  */
 - (void)showBadge;
+
+/**
+ * 显示几个小红点儿
+ * parameter redCount 小红点儿个数
+ */
+- (void)showBadgeWithCount:(NSInteger)redCount;
 
 /**
  *  隐藏小红点

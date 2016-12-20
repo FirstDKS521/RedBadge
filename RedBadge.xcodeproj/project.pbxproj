@@ -243,7 +243,7 @@
 				TargetAttributes = {
 					619896551D8E4A3B001CA1D1 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 6X558W558T;
+						DevelopmentTeam = X42645MK9G;
 					};
 					619896681D8E4A3B001CA1D1 = {
 						CreatedOnToolsVersion = 7.2;
@@ -453,7 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6X558W558T;
+				DEVELOPMENT_TEAM = X42645MK9G;
 				INFOPLIST_FILE = RedBadge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -467,7 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6X558W558T;
+				DEVELOPMENT_TEAM = X42645MK9G;
 				INFOPLIST_FILE = RedBadge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
