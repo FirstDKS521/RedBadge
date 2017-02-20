@@ -56,6 +56,7 @@ static CGFloat const badgeFont = 9; //字体的大小
 {
     //从父视图上面移除
     [self.badge removeFromSuperview];
+    self.badge = nil;
 }
 
 #pragma mark - GetterAndSetter
